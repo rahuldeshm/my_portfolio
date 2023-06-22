@@ -15,42 +15,7 @@ header img {
   margin: 0 20px;
   font-weight: 600;
 }
-/********icons********/
-.socialicon button {
-  margin: 0 5px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  background: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-}
-.socialicon button:hover {
-  color: black;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.637);
-}
-.socialicon button::before {
-  content: "";
-  position: absolute;
-  height: 0%;
-  width: 0%;
-  top: 20px;
-  left: 20px;
-  border-radius: 50%;
-  background: #fff;
-  transition: 0.3s;
-  z-index: -1;
-}
-.socialicon button:hover::before {
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-}
+
 /*****button****/
 .vvd {
   font-weight: 700;

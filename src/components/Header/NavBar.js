@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { TbHexagonLetterD, TbHexagonLetterR } from "react-icons/tb";
-import { SiLeetcode } from "react-icons/si";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
 import { BrowserRouter as Router } from "react-router-dom";
 import classes from "./Navbar.module.css";
+import SocialIcons from "../ui/SocialIcons";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -69,23 +67,7 @@ const NavBar = () => {
           </a>
         </div>
         <span className={classes.navbartext}>
-          <div className={classes.socialicon}>
-            <a href="https://github.com/rahuldeshm">
-              <button>
-                <FiGithub size={25} />
-              </button>
-            </a>
-            <a href="https://www.linkedin.com/in/rahul-deshmukh-498a66205/">
-              <button>
-                <AiOutlineLinkedin size={25} />
-              </button>
-            </a>
-            <a href="https://leetcode.com/rahuldeshmukh4545/">
-              <button>
-                <SiLeetcode size={25} />
-              </button>
-            </a>
-          </div>
+          <SocialIcons />
         </span>
         <div>
           <a href="#connect">
