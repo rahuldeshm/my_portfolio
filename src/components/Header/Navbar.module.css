@@ -16,7 +16,7 @@ header img {
   font-weight: 600;
 }
 
-/*****button****/
+/******letsconnect_button*******/
 .vvd {
   font-weight: 700;
   color: #fff;
@@ -99,7 +99,7 @@ header img {
 /******Media Query*****/
 @media screen and (max-width: 655px) {
   .vvd,
-  .socialicon,
+  .navbartext,
   .nav {
     display: none;
   }
@@ -112,7 +112,7 @@ header img {
 }
 
 @media screen and (min-width: 655px) and (max-width: 810px) {
-  .socialicon,
+  .navbartext,
   .toggle {
     display: none;
   }

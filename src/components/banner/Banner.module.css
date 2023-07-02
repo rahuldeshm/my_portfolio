@@ -1,0 +1,51 @@
+.tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner {
+  margin-top: 5rem;
+  height: 75vh;
+  overflow: hidden;
+}
+.h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.vvd {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.vvd svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.vvd:hover svg {
+  margin-left: 25px;
+}
