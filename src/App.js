@@ -4,7 +4,7 @@ import NavBar from "./components/Header/NavBar";
 import { Banner } from "./components/banner/Banner";
 import { Skills } from "./components/skills/Skills";
 import headerImg from "./assets/png/astrocat.png";
-import { Projects } from "./components/Projects";
+import { Projects } from "./components/projects/Projects";
 
 function App() {
   return (

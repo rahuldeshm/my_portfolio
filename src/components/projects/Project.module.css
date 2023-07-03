@@ -1,4 +1,4 @@
-.skill {
+.project {
   margin-top: 2rem;
   overflow: hidden;
 
@@ -7,7 +7,7 @@
 .flex {
   display: flex;
 }
-.skill h2 {
+.project h2 {
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -19,7 +19,6 @@
   );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
 }
 .maindiv {
   background-color: rgba(27, 1, 1, 0.473);
@@ -29,7 +28,7 @@
   padding: 0.5rem 0rem;
 }
 @media screen and (max-width: 655px) {
-  .skill {
+  .project {
     padding: 0px 20px;
   }
   .typediv {
@@ -44,7 +43,7 @@
 }
 
 @media screen and (min-width: 655px) and (max-width: 810px) {
-  .skill {
+  .project {
     padding: 0px 20px;
   }
   .typediv {
@@ -59,7 +58,7 @@
 }
 
 @media screen and (min-width: 810px) and (max-width: 973px) {
-  .skill {
+  .project {
     padding: 0px 20px;
   }
   .typediv {
@@ -74,7 +73,7 @@
 }
 
 @media screen and (min-width: 973px) {
-  .skill {
+  .project {
     padding: 0 30px;
   }
   .typediv {
