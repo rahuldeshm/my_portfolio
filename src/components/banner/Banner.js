@@ -22,7 +22,7 @@ export const Banner = () => {
             </div>
             <div
               style={{ textAlign: "center" }}
-              className="mt-4 d-block d-lg-none "
+              className="mt-4 d-none d-sm-block d-lg-none "
             >
               <SocialIcons />
             </div>
