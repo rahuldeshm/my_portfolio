@@ -31,7 +31,6 @@ const NavBar = () => {
     <Router>
       <header>
         <div>
-          {/* <img src={logo} /> */}
           <TbHexagonLetterR size={60} style={{ color: "white" }} />
           <TbHexagonLetterD size={60} style={{ color: "white" }} />
         </div>

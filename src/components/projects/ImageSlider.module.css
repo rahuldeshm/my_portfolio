@@ -9,7 +9,6 @@
 }
 .mainimg img {
   width: 100%;
-  height: 25rem;
   object-fit: cover;
 }
 .allimg {
@@ -23,29 +22,4 @@
   width: 6rem;
   height: 6rem;
   object-fit: cover;
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-  .wholeslider {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  .mainimg {
-    width: 80%;
-  }
-  .allimg {
-    flex-direction: column;
-  }
-}
-@media (min-width: 1000px) {
-  .wholeslider {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  .mainimg {
-    width: 80%;
-  }
-  .allimg {
-    flex-direction: column;
-  }
 }

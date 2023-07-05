@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Banner.module.css";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { MdPictureAsPdf } from "react-icons/md";
 import TextAnimation from "./TextAnimation";
 
 function AnimationScreen() {
@@ -17,7 +17,7 @@ function AnimationScreen() {
         to take responsibilities.
       </p>
       <button className={classes.vvd} onClick={() => console.log("connect")}>
-        Let’s Connect <BsFillArrowRightCircleFill size={25} />
+        Download My Resume <MdPictureAsPdf size={25} />
       </button>
     </div>
   );
