@@ -112,7 +112,7 @@
   z-index: -1;
   border-radius: 1rem;
   height: 100%;
-  background-color: rgb(78, 252, 252);
+  background-color: rgb(71, 245, 231);
   position: absolute;
   transition: 1s;
 }
@@ -131,7 +131,7 @@
   position: relative;
   width: 30%;
   height: 100%;
-  background-color: rgba(27, 1, 1, 0.473);
+  background-color: rgba(27, 1, 1, 0.836);
 }
 
 .robo img {

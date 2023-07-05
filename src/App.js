@@ -5,6 +5,8 @@ import { Banner } from "./components/banner/Banner";
 import { Skills } from "./components/skills/Skills";
 import headerImg from "./assets/png/astrocat.png";
 import { Projects } from "./components/projects/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       >
         <img src={headerImg} alt="Header Img" />
       </div>
+      <Contact />
+      <Footer />
     </div>
   );
 }

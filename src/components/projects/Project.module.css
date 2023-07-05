@@ -6,6 +6,8 @@
 }
 .flex {
   display: flex;
+  position: relative;
+  flex-wrap: wrap;
 }
 .project h2 {
   text-align: center;
@@ -20,19 +22,13 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
 }
-.maindiv {
-  background-color: rgba(27, 1, 1, 0.473);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0.5rem 0rem;
-}
+
 @media screen and (max-width: 655px) {
   .project {
     padding: 0px 20px;
   }
-  .typediv {
-    width: calc(100% - 3rem);
+  .projecttype {
+    width: calc(100%);
   }
   .robo {
     display: none;
@@ -46,8 +42,8 @@
   .project {
     padding: 0px 20px;
   }
-  .typediv {
-    width: calc(100% - 3rem);
+  .projecttype {
+    width: calc(100%);
   }
   .robo {
     display: flex;
@@ -61,8 +57,8 @@
   .project {
     padding: 0px 20px;
   }
-  .typediv {
-    width: calc(50% - 1rem); /* Adjust the margin as needed */
+  .projecttype {
+    width: calc(50%); /* Adjust the margin as needed */
   }
   .robo {
     display: flex;
@@ -76,8 +72,8 @@
   .project {
     padding: 0 30px;
   }
-  .typediv {
-    width: calc(50% - 1rem); /* Adjust the margin as needed */
+  .projecttype {
+    width: calc(50%); /* Adjust the margin as needed */
   }
   .robo {
     display: flex;
@@ -86,7 +82,7 @@
     width: 70%;
   }
 }
-.typediv {
+.projecttype {
   border: 1px solid salmon;
   padding: 1rem;
   height: auto;
