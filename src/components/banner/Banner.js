@@ -8,16 +8,14 @@ import SocialIcons from "../ui/SocialIcons";
 
 export const Banner = () => {
   return (
-    <section className={classes.banner} id="home">
+    <section className={classes.banner} id="banner">
       <Container>
         <Row>
           <Col xs={12} md={6} xl={8}>
             <AnimationScreen />
           </Col>
           <Col xs={12} md={6} xl={4}>
-            <div
-              className={"animate__animated animate__zoomIn d-none d-md-block"}
-            >
+            <div className={"animate__animated animate__zoomIn "}>
               <img src={headerImg} alt="Header Img" />
             </div>
             <div

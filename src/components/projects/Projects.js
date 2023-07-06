@@ -6,6 +6,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "Mango Seller and Customer",
+      link: "https://mango-7694c.web.app/",
       class: "",
       keys: ["Animations", "Custom Hooks", "HOC"],
       description: [
@@ -24,6 +25,7 @@ export const Projects = () => {
     },
     {
       title: "Mail Box Client",
+      link: "https://mailbox-de8bb.firebaseapp.com/",
       keys: ["Realtime Mails", "Firebase", "Redux", "GitHub"],
       class: "",
       description: [
@@ -39,7 +41,8 @@ export const Projects = () => {
     },
     {
       title: "Expense Tracker",
-      keys: ["Premium", "Firebase", "Git", "Authentication"],
+      link: "https://expnesetracker.firebaseapp.com/",
+      keys: ["Firebase", "Premium", "Git", "Authentication"],
       class: "",
       description: [
         "user can save their expenses for lifetime,Verify email and forgot password functions are available.",
@@ -54,7 +57,8 @@ export const Projects = () => {
     },
     {
       title: "E-Commerce website",
-      keys: ["Context API", "ReactJs", "CSS", "React Router"],
+      link: "https://rahuldeshm.github.io/react-app-e-commerse-website/",
+      keys: ["Context API", "ReactJs", "React Router", "CSS"],
       class: "",
       description: [
         "Firebase is used for authentication, account remains login till the validity of token.",
@@ -67,9 +71,20 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/mailbox-de8bb.appspot.com/o/react%2Fecom%2FScreenshot%20(86).png?alt=media&token=cc45a012-7475-45ef-a9aa-cc77f3f63e2d",
       ],
     },
-
+    {
+      title: "dummy",
+      keys: [],
+      class: "vis",
+      description: [
+        "Frontend using HTML css and JavaScript",
+        "SQL queries used to store and retrive data from database",
+        "mySql database is used for storing the data",
+      ],
+      imgUrl: [""],
+    },
     {
       title: "Expense Backend",
+      link: "https://github.com/rahuldeshm/expensetracker_fullstack",
       keys: ["ExpressJs", "NodeJs", "JWT", "bcrypt"],
       class: "",
       description: [
@@ -86,6 +101,7 @@ export const Projects = () => {
     },
     {
       title: "Meetups NextJs fullstack app",
+      link: "https://nextjs-second-one.vercel.app/",
       keys: ["NextJs", "MongoDB", " Dynamic Pages"],
       class: "",
       description: [
@@ -98,9 +114,20 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/mailbox-de8bb.appspot.com/o/fullstack%2Fmeetup%2FScreenshot%20(110).png?alt=media&token=33242c1a-2f1c-461c-899c-0e7c5835c7f1",
       ],
     },
-
+    {
+      title: "dummy2",
+      keys: [],
+      class: "vist",
+      description: [
+        "Frontend using HTML css and JavaScript",
+        "SQL queries used to store and retrive data from database",
+        "mySql database is used for storing the data",
+      ],
+      imgUrl: [robo],
+    },
     {
       title: "ChatGPT for YouTube.com",
+      link: "https://github.com/rahuldeshm/chrome_extension_chatGPT",
       keys: ["Manifest", "Animations", "Axios", "ReactJs"],
       class: "",
       description: [
@@ -114,6 +141,7 @@ export const Projects = () => {
     },
     {
       title: "Dark Mode Extension for Sharpener",
+      link: "https://github.com/rahuldeshm/sharpener_darkmode_extension",
       keys: ["Darkmode", "HTML", "CSS"],
       class: "",
       description: [
@@ -128,18 +156,8 @@ export const Projects = () => {
     },
 
     {
-      title: "dummy",
-      keys: [],
-      class: "vis",
-      description: [
-        "Frontend using HTML css and JavaScript",
-        "SQL queries used to store and retrive data from database",
-        "mySql database is used for storing the data",
-      ],
-      imgUrl: [""],
-    },
-    {
       title: "Admin Panel",
+      link: "https://github.com/rahuldeshm/routesofExpress",
       keys: ["Sequelize", "SQL", "mySql", "Routes"],
       class: "",
       description: [
@@ -154,6 +172,7 @@ export const Projects = () => {
     },
     {
       title: "Book a Call",
+      link: "https://github.com/rahuldeshm/book_a_call_backend",
       keys: ["HTML", "CSS", "JavaScript", "ExpressJs"],
       class: "",
       description: [
@@ -165,25 +184,14 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/mailbox-de8bb.appspot.com/o/express%2FScreenshot%20(121).png?alt=media&token=22d1046f-3e56-4efa-a17c-ebe4ac5a9acc",
       ],
     },
-    {
-      title: "dummy2",
-      keys: [],
-      class: "vist",
-      description: [
-        "Frontend using HTML css and JavaScript",
-        "SQL queries used to store and retrive data from database",
-        "mySql database is used for storing the data",
-      ],
-      imgUrl: [robo],
-    },
   ];
 
   return (
     <section className={classes.project} id="projects">
       <h2>Projects</h2>
       <div className={classes.flex}>
-        {projects.map((e) => {
-          return <ProjectItem key={e.type} e={e} />;
+        {projects.map((e, index) => {
+          return <ProjectItem key={`${index}${e.keys[0]}`} e={e} />;
         })}
       </div>
     </section>

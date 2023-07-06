@@ -8,7 +8,7 @@ import Key from "./Key";
 function ProjectItem(props) {
   const [show, setShow] = useState(false);
   const indclass = props.e.class;
-  console.log(indclass);
+
   return (
     <div className={`${classes.item} ${classes[indclass]}`}>
       <div className={classes.projecttext}>
@@ -26,20 +26,24 @@ function ProjectItem(props) {
           }}
         </TrackVisibility>
 
-        {props.e.keys.map((e) => (
-          <Key e={e} />
-        ))}
+        {props.e.keys.map((e, index) => {
+          return <Key e={e} key={`${Math.random()}${index}`} />;
+        })}
         <ul>
           {props.e.description.map((e, index) => {
-            return <li key={index}>{e}</li>;
+            return <li key={`${Math.random()}${index}`}>{e}</li>;
           })}
         </ul>
       </div>
-      <a href="#" className={classes.link}>
+      <a href={props.e.link} target="blank" className={classes.link}>
         link
       </a>
       <div className={classes.projectimg}>
-        <img onClick={() => setShow(!show)} src={props.e.imgUrl[0]} />
+        <img
+          onClick={() => setShow(!show)}
+          src={props.e.imgUrl[0]}
+          alt="Project"
+        />
       </div>
       {show && <Images list={props.e.imgUrl} onClose={() => setShow(!show)} />}
     </div>

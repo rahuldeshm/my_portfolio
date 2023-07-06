@@ -1,4 +1,9 @@
 /********icons********/
+.socialicon {
+  display: block;
+  position: relative;
+  z-index: 21;
+}
 .socialicon button {
   margin: 0 5px;
   border: 1px solid #fff;
@@ -34,4 +39,5 @@
   left: 0px;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }

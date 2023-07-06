@@ -6,9 +6,9 @@ function SkillType(props) {
   return (
     <div className={classes.typediv}>
       <h4>{props.e.name}</h4>
-      {props.e.skills.map((e) => (
-        <Skill key={e} e={e} />
-      ))}
+      {props.e.skills.map((e) => {
+        return <Skill key={e.name} e={e} />;
+      })}
     </div>
   );
 }

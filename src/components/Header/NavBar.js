@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { TbHexagonLetterD, TbHexagonLetterR } from "react-icons/tb";
-import { BrowserRouter as Router } from "react-router-dom";
 import classes from "./Navbar.module.css";
 import SocialIcons from "../ui/SocialIcons";
+import Manu from "./Manu";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -28,8 +28,8 @@ const NavBar = () => {
   };
 
   return (
-    <Router>
-      <header>
+    <header id="home">
+      <div className={classes.header}>
         <div>
           <TbHexagonLetterR size={60} style={{ color: "white" }} />
           <TbHexagonLetterD size={60} style={{ color: "white" }} />
@@ -76,15 +76,18 @@ const NavBar = () => {
           </a>
         </div>
         <div
-          class={manu ? `${classes.toggle} ${classes.active}` : classes.toggle}
+          className={
+            manu ? `${classes.toggle} ${classes.active}` : classes.toggle
+          }
           onClick={() => setmanu(!manu)}
         >
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </header>
-    </Router>
+        <Manu onClick={() => setmanu(!manu)} manu={manu} />
+      </div>
+    </header>
   );
 };
 

@@ -16,9 +16,17 @@ function AnimationScreen() {
         team player with effective interpersonal communication skills, willing
         to take responsibilities.
       </p>
-      <button className={classes.vvd} onClick={() => console.log("connect")}>
-        Download My Resume <MdPictureAsPdf size={25} />
-      </button>
+
+      <a
+        href="https://firebasestorage.googleapis.com/v0/b/mailbox-de8bb.appspot.com/o/resume%2F05072023.pdf?alt=media&token=83893579-cc35-4c0b-bebe-c7fe785ab1b1"
+        target="blank"
+        className={classes.downloadlink}
+        download
+      >
+        <button className={classes.vvd}>
+          Download My Resume <MdPictureAsPdf size={25} />
+        </button>
+      </a>
     </div>
   );
 }

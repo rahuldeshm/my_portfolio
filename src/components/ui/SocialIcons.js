@@ -9,17 +9,23 @@ function SocialIcons() {
     <div className={classes.socialicon}>
       <a href="https://github.com/rahuldeshm">
         <button>
-          <FiGithub size={25} />
+          <div className={classes.icon}>
+            <FiGithub size={25} />
+          </div>
         </button>
       </a>
       <a href="https://www.linkedin.com/in/rahul-deshmukh-498a66205/">
         <button>
-          <AiOutlineLinkedin size={25} />
+          <div className={classes.icon}>
+            <AiOutlineLinkedin size={25} />
+          </div>
         </button>
       </a>
       <a href="https://leetcode.com/rahuldeshmukh4545/">
         <button>
-          <SiLeetcode size={25} />
+          <div className={classes.icon}>
+            <SiLeetcode size={25} />
+          </div>
         </button>
       </a>
     </div>

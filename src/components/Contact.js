@@ -25,20 +25,26 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    try {
+      setButtonText("Sending...");
+      const emailf = formDetails.email.replace("@", "").replace(".", "");
+      let response = await fetch(
+        `https://rahuldeshmukhpo-default-rtdb.firebaseio.com/${emailf}.json`,
+        {
+          method: "POST",
+          body: JSON.stringify(formDetails),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setButtonText("Send");
+      let result = await response.json();
+      console.log(result);
+      setFormDetails(formInitialDetails);
       setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
+    } catch (err) {
+      console.log(err);
       setStatus({
         succes: false,
         message: "Something went wrong, please try again later.",
@@ -55,9 +61,7 @@ export const Contact = () => {
               {({ isVisible }) => (
                 <img
                   className={
-                    isVisible
-                      ? "animate__animated animate__zoomIn d-sm-none d-md-block"
-                      : " d-none d-sm-none d-md-block"
+                    isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                   src={contactImg}
                   alt="Contact Us"

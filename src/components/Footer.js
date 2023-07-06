@@ -1,8 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { TbHexagonLetterD, TbHexagonLetterR } from "react-icons/tb";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 import SocialIcons from "./ui/SocialIcons";
 
 export const Footer = () => {
